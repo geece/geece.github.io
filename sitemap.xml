@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://geece.github.io/geece/</loc>
+  <lastmod>2017-01-10T07:38:54+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://geece.github.io/geece/product/</loc>
+  <lastmod>2017-01-11T21:38:54+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://geece.github.io/geece/product/gdp/</loc>
+  <lastmod>2017-01-15T21:38:54+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://geece.github.io/geece/product/power/</loc>
+  <lastmod>2017-01-15T21:38:54+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://geece.github.io/geece/product/airconditioner/</loc>
+  <lastmod>2017-01-15T21:38:54+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://geece.github.io/geece/product/cold/</loc>
+  <lastmod>2017-01-15T21:38:54+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>
