@@ -503,170 +503,159 @@
 							</address>		
 						</div> 
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						<div id="map"></div>
-</div> 
-						<div>
-							Special thanks
-							free svg icon  from <a href="http://www.flaticon.com/"> Flaticon</a>
+							<iframe class="embed-responsive-item" width="300" height="225" 
+							src="https://www.google.com/maps/embed/v1/place?q=104%E5%8F%B0%E7%81%A3%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E5%90%89%E6%9E%97%E8%B7%AF231%E8%99%9F3f&key=AIzaSyBq7e92IllsPnqLrGM64UJzNIASV2qTAoQ" ></iframe>
+
+							<div>
+								Special thanks
+								free svg icon  from <a href="http://www.flaticon.com/"> Flaticon</a>
+							</div>
+							<div>
+								Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0
+							</div>
+
 						</div>
-						<div>
-							Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0
-						</div>
-
-					</div>
-				</footer>
+					</footer>
 
 
 
-				<!-- JavaScript -->
-				<script src="js/jquery-1.10.2.js"></script>
-				<script src="js/bootstrap.js"></script>
-				<script src="js/owl.carousel.js"></script>
-				<script src="js/script.js"></script>
-				<!-- StikyMenu -->
-				<script src="js/stickUp.min.js"></script>
-				<script type="text/javascript">
-					jQuery(function($) {
-						$(document).ready( function() {
-							$('.navbar-default').stickUp();
+					<!-- JavaScript -->
+					<script src="js/jquery-1.10.2.js"></script>
+					<script src="js/bootstrap.js"></script>
+					<script src="js/owl.carousel.js"></script>
+					<script src="js/script.js"></script>
+					<!-- StikyMenu -->
+					<script src="js/stickUp.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(document).ready( function() {
+								$('.navbar-default').stickUp();
+							});
 						});
-					});
 
-				</script>
+					</script>
 
-				<script src="js//sonic.js"></script>
-				<script>
+					<script src="js//sonic.js"></script>
+					<script>
 
-					var a1 = 
-					{
+						var a1 = 
+						{
 
-						width: 100,
-						height: 50,
-						padding: 10,
+							width: 100,
+							height: 50,
+							padding: 10,
 
-						stepsPerFrame: 2,
-						trailLength: 1,
-						pointDistance: .03,
+							stepsPerFrame: 2,
+							trailLength: 1,
+							pointDistance: .03,
 
-						strokeColor: '#FF7B24',
+							strokeColor: '#FF7B24',
 
-						step: 'fader',
+							step: 'fader',
 
-						multiplier: 2,
+							multiplier: 2,
 
-						setup: function() {
-							this._.lineWidth = 5;
+							setup: function() {
+								this._.lineWidth = 5;
+							},
+
+							path: [
+
+							['arc', 10, 10, 10, -270, -90],
+							['bezier', 10, 0, 40, 20, 20, 0, 30, 20],
+							['arc', 40, 10, 10, 90, -90],
+							['bezier', 40, 0, 10, 20, 30, 0, 20, 20]
+							]
+						}
+
+
+						var loaders = [
+
+						{
+
+							width: 100,
+							height: 100,
+
+							stepsPerFrame: 4,
+							trailLength: 1,
+							pointDistance: .01,
+							fps: 25,
+
+							fillColor: '#FF7B24',
+
+							setup: function() {
+								this._.lineWidth = 10;
+							},
+
+							step: function(point, i, f) {
+
+								var progress = point.progress,
+								degAngle = 360 * progress,
+								angle = Math.PI/180 * degAngle,
+								angleB = Math.PI/180 * (degAngle - 180),
+								size = i*10;
+
+								this._.fillRect(
+									Math.cos(angle) * 25 + (50-size/2),
+									Math.sin(angle) * 15 + (50-size/2),
+									size,
+									size
+									);
+
+								this._.fillStyle = '#63D3FF';
+
+								this._.fillRect(
+									Math.cos(angleB) * 15 + (50-size/2),
+									Math.sin(angleB) * 25 + (50-size/2),
+									size,
+									size
+									);
+
+								if (point.progress == 1) {
+
+									this._.globalAlpha = f < .5 ? 1-f : f;
+
+									this._.fillStyle = '#EEE';
+
+									this._.beginPath();
+									this._.arc(50, 50, 5, 0, 360, 0);
+									this._.closePath();
+									this._.fill();
+
+								}
+
+
+							},
+
+							path: [
+							['line', 40, 10, 60, 90]
+							]
 						},
 
-						path: [
+						];
 
-						['arc', 10, 10, 10, -270, -90],
-						['bezier', 10, 0, 40, 20, 20, 0, 30, 20],
-						['arc', 40, 10, 10, 90, -90],
-						['bezier', 40, 0, 10, 20, 30, 0, 20, 20]
-						]
-					}
+						var d, a, container = document.getElementById('in');
 
 
-					var loaders = [
 
-					{
+						for (var i = -1, l = loaders.length; ++i < l;) {
 
-						width: 100,
-						height: 100,
+							d = document.createElement('div');
+							d.className = 'l';
 
-						stepsPerFrame: 4,
-						trailLength: 1,
-						pointDistance: .01,
-						fps: 25,
+							a = new Sonic(loaders[i]);
 
-						fillColor: '#FF7B24',
+							d.appendChild(a.canvas);
+							container.appendChild(d);
 
-						setup: function() {
-							this._.lineWidth = 10;
-						},
+							a.play();
 
-						step: function(point, i, f) {
-
-							var progress = point.progress,
-							degAngle = 360 * progress,
-							angle = Math.PI/180 * degAngle,
-							angleB = Math.PI/180 * (degAngle - 180),
-							size = i*10;
-
-							this._.fillRect(
-								Math.cos(angle) * 25 + (50-size/2),
-								Math.sin(angle) * 15 + (50-size/2),
-								size,
-								size
-								);
-
-							this._.fillStyle = '#63D3FF';
-
-							this._.fillRect(
-								Math.cos(angleB) * 15 + (50-size/2),
-								Math.sin(angleB) * 25 + (50-size/2),
-								size,
-								size
-								);
-
-							if (point.progress == 1) {
-
-								this._.globalAlpha = f < .5 ? 1-f : f;
-
-								this._.fillStyle = '#EEE';
-
-								this._.beginPath();
-								this._.arc(50, 50, 5, 0, 360, 0);
-								this._.closePath();
-								this._.fill();
-
-							}
+						}
 
 
-						},
+					</script> 
 
-						path: [
-						['line', 40, 10, 60, 90]
-						]
-					},
-
-					];
-
-					var d, a, container = document.getElementById('in');
-
-					
-
-					for (var i = -1, l = loaders.length; ++i < l;) {
-
-						d = document.createElement('div');
-						d.className = 'l';
-
-						a = new Sonic(loaders[i]);
-
-						d.appendChild(a.canvas);
-						container.appendChild(d);
-
-						a.play();
-
-					}
-					
-
-				</script> 
-
-				<script>
-					function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-        	center: {lat: -34.397, lng: 150.644},
-        	scrollwheel: false,
-        	zoom: 8
-        });
-    }
-
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBq7e92IllsPnqLrGM64UJzNIASV2qTAoQ&callback=initMap"
-async defer></script>
+				
 
 <!-- Smoothscroll -->
 <script type="text/javascript" src="js/jquery.corner.js"></script> 
