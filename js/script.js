@@ -209,14 +209,18 @@ $(document).ready(function() {
 			autoPlay: 3000,
 			items : 1,
 			itemsDesktop : [1199,3],
-			itemsDesktopSmall : [979,3]
+			itemsDesktopSmall : [979,3],
+			 loop:true,
+    margin:10,
 		});
 
 		$("#owl-cold").owlCarousel({
 			autoPlay: 3000,
 			items : 1,
 			itemsDesktop : [1199,3],
-			itemsDesktopSmall : [979,3]
+			itemsDesktopSmall : [979,3],
+			 loop:true,
+    margin:10,
 		});
 		$("#bu-demo").owlCarousel({
 			lazyLoad : true,
