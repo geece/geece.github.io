@@ -13,6 +13,23 @@ http://www.andreagalanti.it
 }
 
 @font-face {
+  font-family: "Century Gothic";
+  src: url('../fonts/Century Gothic.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "MHeiHK-Light";
+  src: url('../fonts/MHeiHK-Light.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+@font-face {
   font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", sans-serif;
   src: url('../fonts/lato/lato-black.eot');
   src: url('../fonts/lato/lato-black.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-black.woff') format('woff'), url('../fonts/lato/lato-black.ttf') format('truetype'), url('../fonts/lato/lato-black.svg#latoblack') format('svg');
