@@ -5,7 +5,12 @@ Bootstrap Version
 Build: 1.0
 http://www.andreagalanti.it
 */
-
+@font-face {
+  font-family: "華康儷宋體";
+  src: url('../fonts/華康儷中宋.ttc');
+  font-weight: 900;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", sans-serif;

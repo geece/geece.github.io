@@ -323,20 +323,20 @@ body, html {
 }
 
 .content-section-a {
-	background-color: #282626;
+	background-color: #262626;
 	color:#ffffff;
 	font-family: '華康儷宋體', serif;
 	padding: 90px 0; 
-	background: url(../img/intro/dark_fish_skin_@2X.png) repeat   ;
+	/*background: url(../img/intro/dark_fish_skin_@2X.png) repeat   ;*/
 }
 
 .content-section-b {
-	background-color: #282626;
+	background-color: #262626;
 	color:#ffffff;
 	
 	font-family: '華康儷宋體', serif;
 	padding: 90px 0;
-	background: url(../img/intro/dark_fish_skin_@2X.png) repeat   ; 
+	/*background: url(../img/intro/dark_fish_skin_@2X.png) repeat   ; */
 }
 
 .section-heading {
