@@ -26,6 +26,13 @@ http://www.andreagalanti.it
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: "GOTHICB";
+  src: url('../fonts/GOTHICB.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
 
 
 
