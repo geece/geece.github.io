@@ -4494,7 +4494,12 @@ footer {
 footer .h3-en {
    
    font-family: 'GOTHICB', serif;
-   font-size: 25px;
+   font-size: 30px;
+  }
+
+  footer .h3-ch{
+   font-weight:  bold;
+   font-size: 30px;
   }
 
   footer h3 {
@@ -4758,7 +4763,9 @@ footer p {
 .mal {
   margin-left: 20px;
 }
-
+.footer-p-s {
+  font-size: 10px;
+}
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   p{text-align: center;}
