@@ -4485,10 +4485,22 @@ body.vjs-full-window {
 }
 footer {
   background-color: #edeff1;
-  color: #bac1c8;
+  color: #262626;
+  font-family: '華康儷宋體', serif;
   font-size: 15px;
   padding: 0;
 }
+
+footer .h3-en {
+   
+   font-family: 'GOTHICB', serif;
+   font-size: 25px;
+  }
+
+  footer h3 {
+   font-weight: bold;
+  }
+
 footer a {
   color: #9aa4af;
   font-weight: 700;
