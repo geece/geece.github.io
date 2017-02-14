@@ -116,9 +116,9 @@
 
 			</div>
 
-			<div  class="collapse navbar-collapse navbar-right navbar-ex1-collapse" >
+			<div  class="collapse navbar-collapse navbar-right navbar-ex1-collapse " >
 				<ul class="nav navbar-nav " itemscope itemtype="http://www.schema.org/SiteNavigationElement" >
-					<li class="menuItem" itemprop="name"><a itemprop="url" >關於綠豐</a></li>	
+					<li class="menuItem" itemprop="name"><a itemprop="url" href="#about" onclick="show_div('about');" >關於綠豐</a></li>	
 					<li class="dropdown" itemprop="name">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">服務項目<span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -141,6 +141,34 @@
 		</div>
 	</nav> 
 
+	
+	<!-- about -->	
+		<div id="about" class="content-section-a" style="display: none;" >
+			<div class="container">			
+			<div class="row ">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 greenborderright">
+					<h3 style="text-align: right;">關於綠豐</h3>
+					<img src="img/intro/冰水主機結構圖.png" alt=""  class="img-responsive center-block">
+					
+				</div>
+				<div class=" col-lg-5 col-md-5 col-sm-12 col-xs-12 ">
+					
+						<p  class="gdp  "> 
+						我們從事電氣、電信、給排水，消防規劃設計工程，<br>
+						提供相關工程與完善的售後服務<br>
+						<br>
+						我們堅持品質與服務態度，獲廣大客戶的肯定。<br>
+						<br>
+						<br>
+						關於溫濕度監控、溫濕度確效，我們有專業的團隊與豐富的經驗<br>
+						幫助客戶完成PIC/S GDP的認證
+						</p> 
+				</div>
+				<div class=" col-lg-1 col-md-1 col-sm-12 col-xs-12 ">
+				</div>
+			</div>
+		</div>
+</div>
 
 	<!-- What is 服務項目-->
 	<div id="whatis" class="content-section-a " style="border-top: 0">
@@ -337,26 +365,17 @@
 
 					</div>
 
-
-
-
-
-
-
-					
 				</div> 
 
 			</div> 
 
 
-
-
-
-
-
+	
 
 		</div>
 	</div> 
+
+
 
 	<footer id="contact" >
 		<div class="container">
@@ -407,7 +426,14 @@
 			<script src="js/bootstrap.js"></script>
 			<script src="js/owl.carousel.js"></script>
 			<script src="js/script.js"></script>
-
+<script>
+    //Functon to show divs from the nav menu
+    function show_div(toShow)
+    {
+        var show = document.getElementById(toShow);
+        show.style.display = "";
+    }
+</script>
 
 			<!-- Smoothscroll -->
 			<script type="text/javascript" src="js/jquery.corner.js"></script> 
