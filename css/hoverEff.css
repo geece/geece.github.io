@@ -33,6 +33,35 @@ border: 8px solid white;
 background: transparent;
 }
 
+.greenborderall {
+  border-style: solid ;
+  border: 5px solid #66ff00;
+}
+
+.greenborderright {
+  border-style: hidden solid hidden hidden;
+  border-right: 2px solid #66ff00;
+}
+
+
+
+.gdp {
+  border-radius:3px;
+  color: white;
+  font-family: '華康儷宋體', serif;
+  font-size: 14px;
+}
+.greenbutton {
+  border-radius:15px;
+  color: white;
+  font-family: '華康儷宋體', serif;
+  font-size: 15px;
+  border-style: solid ;
+  border: 3px solid #66ff00;
+  padding: 5px;
+}
+
+
 
 .greenborder {
 /* border: 8px solid #66ff00;
