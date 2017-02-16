@@ -21,6 +21,13 @@ http://www.andreagalanti.it
 
 
 @font-face {
+  font-family: "MHeiHK-Bold";
+  src: url('../fonts/MHeiHK-Bold.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "MHeiHK-Light";
   src: url('../fonts/MHeiHK-Light.otf');
   font-weight: 900;
@@ -4498,8 +4505,8 @@ footer .h3-en {
   }
 
   footer .h3-ch{
-   font-weight:  bold;
-   font-size: 30px;
+   font-family: 'MHeiHK-Bold', serif;
+   font-size: 33.3px;
   }
 
   footer h3 {
@@ -4515,6 +4522,12 @@ footer p {
   line-height: 20px;
   margin-bottom: 10px;
 }
+ .p-ch {
+    font-family: 'MHeiHK  light ', serif;
+    font-size:18.81px
+  }
+
+
 .footer-title {
   margin: 0 0 22px;
   padding-top: 21px;
