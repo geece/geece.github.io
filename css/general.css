@@ -1254,7 +1254,10 @@ footer {
 }
 
 p.copyright {
+
+	font-family: 'MHeiHK-Light', serif;
 	margin: 15px 0 0;
+	font-size:13.23pt;
 }
 
 @media (max-width: 767px) {
