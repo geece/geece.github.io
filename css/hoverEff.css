@@ -41,6 +41,7 @@
 .greenborderright {
   border-style: hidden solid hidden hidden;
   border-right: 2px solid #66ff00;
+
 }
 
 .greenborderleft {
@@ -62,7 +63,7 @@
   font-size: 15px;
   border-style: solid ;
   border: 3px solid #66ff00;
-  padding: 5px;
+  padding: 10px;
 }
 
 
@@ -105,6 +106,16 @@ border-bottom: 2px solid #66ff00;
   text-decoration-color: #66ff00;*/
 
 }
+
+
+.top-left {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
 
 
 /*調整各項目字型*/

@@ -43,7 +43,7 @@
 
 	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
 
-<!-- 邊框 CSS file -->
+	<!-- 邊框 CSS file -->
 	<link href="css/hoverEff.css" rel="stylesheet">
 
 
@@ -67,25 +67,20 @@
 		<div id="status"></div>
 	</div>
 
-	<!-- FullScreen -->
-	<div class="intro-header zoomIn">
-		<div class="col-xs-12 text-center abcen1 ">
-			<h1 class="h1_home wow fadeIn " data-wow-delay="0.4s">綠豐興業有限公司</h1>
-			<h2 class="h2_home wow fadeIn " data-wow-delay="0.6s">GEECE</h2>
-			<h3 class="h3_home wow fadeIn " data-wow-delay="0.6s"><br><br>節能&nbsp;&nbsp;&nbsp;機電&nbsp;&nbsp;&nbsp;環控工程</h3>
-
-			
-		</div>    
-		<!-- /.container -->
-		<div class="col-xs-12 text-center abcen wow fadeIn">
-			<div class="button_down "> 
-				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#question"> <img class="img_scroll" src="img/icon/pointer-01.svg" alt=""> </a>
+	<div id="top-header" class="content-section-a"  >
+		<div class="container">
+			<div id="top-left" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+			<div>
+				<a  href="http://geece.com.tw/">         	
+					<img src="img/intro/綠豐logo.png" width="80"  height="62"  alt=""  class="">		
+				</a>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- NavBar-->
-	<nav class="navbar-inverse" role="navigation">
+	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -96,7 +91,7 @@
 
 			<div  class="collapse navbar-collapse navbar-right navbar-ex1-collapse" >
 				<ul class="nav navbar-nav " itemscope itemtype="http://www.schema.org/SiteNavigationElement" >
-					<li class="menuItem" itemprop="name"><a itemprop="url" >關於綠豐</a></li>	
+					<li class="menuItem" itemprop="name"><a itemprop="url" href="http://geece.com.tw/#about" >關於綠豐</a></li>	
 					<li class="dropdown" itemprop="name">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">服務項目<span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -104,12 +99,11 @@
 							<li><a href="http://geece.com.tw/product/cold/#div-link">冷凍冷藏工程</a></li>					
 							<li><a href="http://geece.com.tw/product/power/#div-link3">機電工程</a></li>
 							<li><a href="http://geece.com.tw/product/gdp/#div-link4">輔助認證PIC/S/GDP</a></li>
-
 							<li><a href="#whatis">維修保養</a></li>
 						</ul>
 					</li>
 					<li class="menuItem" itemprop="name"><a itemprop="url" href="http://geece.com.tw/#screen">工程實績</a></li>						
-					<li class="menuItem" itemprop="name" ><a itemprop="url" href="#ca">認證相關</a></li>											
+					<li class="menuItem" itemprop="name" ><a itemprop="url" href="http://geece.com.tw/#ca">認證相關</a></li>											
 					<li class="menuItem" itemprop="name"><a itemprop="url" href="#question">法規相關</a></li>					
 					<li class="menuItem" itemprop="name"><a itemprop="url" href="#contact">聯絡我們</a></li>
 				</ul>
@@ -120,7 +114,42 @@
 	</nav> 
 
 
-	
+	<!-- question -->	
+	<div id="question" class="content-section-a" >
+		<div class="container">
+
+			<div class="row ">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 greenborderright" >
+					<h3 style="text-align: right;"  >法規相關</h3>
+
+					<div class="embed-responsive embed-responsive-4by3 greenborderall "  >
+						< <iframe class="embed-responsive-item pull-left "  width="150" height="125" src="//www.slideshare.net/slideshow/embed_code/key/5plAlIV2uzgSYY"></iframe>   
+					</div> 
+
+				</div>
+
+				<div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 " style=" padding-left: 30px;">
+					<h3>環保署將公告訂定「應符合室內空氣品質管理法之第二批公告場所」<h3>
+						<p  class="gdp  "> 包括將第一批公告場所（大專院校、圖書館、<br>
+							醫療機構所在場所、社會福利機構所在場所、<br>
+							政府機關辦公場所、鐵路運輸業車站、民用<br>航空站、大眾捷運系統運輸業車站、
+							展覽室<br>及會議廳、商場等10類型）
+							<br>
+							擴增其管制對象及管制區域外
+							另新增博物館<br>及美術館、金融機構營業場所、表演廳、
+							電<br>影院、視聽歌唱業場所及運動健身等6類型場所
+						</p> 
+						<div>
+							<a href="http://enews.epa.gov.tw/enews/fact_Newsdetail.asp?InputTime=1060110154850"
+							target="_blank" class=" greenbutton">資料來源:環保署</a>
+						</div>
+
+					</div>
+					<!-- <div class=" col-lg-1 col-md-1 col-sm-12 col-xs-12 ">
+				</div> -->
+			</div>
+		</div>
+	</div>
 
 	<footer id="contact" >
 		<div class="container">
@@ -183,7 +212,18 @@
 			<script src="js/uiMorphingButton_inflow.js"></script>
 			<!-- Magnific Popup core JS file -->
 			<script src="js/jquery.magnific-popup.js"></script> 
-
+			<script  type="text/javascript">
+			 $( document ).ready(function() {
+				$('#top-left').affix({
+					offset: {
+						top: 100,
+						bottom: function () {
+							return (this.bottom = $('.footer').outerHeight(true))
+						}
+					}
+				})
+			}
+			</script> 
 		</body>
 
 		</html>
