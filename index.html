@@ -93,6 +93,11 @@
 
 	<!-- FullScreen -->
 	<div class="intro-header zoomIn">
+		<div  class="top-left pull-left" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+			<a  href="http://geece.com.tw/">         	
+				<img src="img/intro/綠豐logo.png" width="80"  height="62"  alt=""  >		
+			</a>
+		</div>
 		<div class="col-xs-12 text-center abcen1 ">
 			<h1 class="h1_home wow fadeIn " data-wow-delay="0.4s">綠豐興業有限公司</h1>
 			<h2 class="h2_home wow fadeIn " data-wow-delay="0.6s">GEECE</h2>
@@ -133,8 +138,8 @@
 						</ul>
 					</li>
 					<li class="menuItem" itemprop="name"><a itemprop="url" href="#screen">工程實績</a></li>						
-					<li class="menuItem" itemprop="name" ><a itemprop="url" href="#" onclick="show_div('ca');return false;">認證相關</a></li>											
-					<li class="menuItem" itemprop="name"><a itemprop="url" href="#" onclick="show_div('question');return false;" >法規相關</a></li>					
+					<li class="menuItem" itemprop="name" ><a itemprop="url" href="#" onclick="show_div('ca');return false;" >認證相關</a></li>											
+					<li class="menuItem" itemprop="name"><a itemprop="url" href="http://geece.com.tw/gdp.html"  >法規相關</a></li>					
 					<li class="menuItem" itemprop="name"><a itemprop="url" href="#contact">聯絡我們</a></li>
 				</ul>
 			</div>
@@ -209,7 +214,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- question -->	
+		<!-- question 	
 		<div id="question" class="content-section-a" style="display: none;">
 			<div class="container">
 				
@@ -217,7 +222,7 @@
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 greenborderright">
 						<h3 style="text-align: right;">法規相關</h3>
 						<div class="embed-responsive embed-responsive-4by3 greenborderall " >
-								<iframe class="embed-responsive-item"  width="300" height="250" src="//www.slideshare.net/slideshow/embed_code/key/5plAlIV2uzgSYY"></iframe>   
+							<iframe class="embed-responsive-item"  width="300" height="250" src="//www.slideshare.net/slideshow/embed_code/key/5plAlIV2uzgSYY"></iframe>   
 						</div>
 					</div>
 
@@ -241,7 +246,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- about -->	
 			<div id="about" class="content-section-a" style="display: none;" >
@@ -541,6 +546,15 @@
     show.style.display = "";
 }
 </script>
+<script  type="text/javascript">
+	$( document ).ready(function() {
+		$('#top-left').affix({
+			offset: {
+				top: $("header").outerHeight(true)}
+			}
+		})
+	}
+</script> 
 
 <!-- Smoothscroll -->
 <script type="text/javascript" src="js/jquery.corner.js"></script> 

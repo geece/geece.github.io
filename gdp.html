@@ -67,14 +67,12 @@
 		<div id="status"></div>
 	</div>
 
-	<div id="top-header" class="content-section-a"  >
+	<div id="top-header" class="content-section-a" style="padding: 5px" >
 		<div class="container">
 			<div id="top-left" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-			<div>
 				<a  href="http://geece.com.tw/">         	
 					<img src="img/intro/綠豐logo.png" width="80"  height="62"  alt=""  class="">		
 				</a>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -119,9 +117,10 @@
 		<div class="container">
 
 			<div class="row ">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 greenborderright" >
+				<div class="col-lg-2 col-md-2 col-sm-hidden col-xs-hidden " >
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 greenborderright" >
 					<h3 style="text-align: right;"  >法規相關</h3>
-
 					<div class="embed-responsive embed-responsive-4by3 greenborderall "  >
 						< <iframe class="embed-responsive-item pull-left "  width="150" height="125" src="//www.slideshare.net/slideshow/embed_code/key/5plAlIV2uzgSYY"></iframe>   
 					</div> 
@@ -216,10 +215,7 @@
 			 $( document ).ready(function() {
 				$('#top-left').affix({
 					offset: {
-						top: 100,
-						bottom: function () {
-							return (this.bottom = $('.footer').outerHeight(true))
-						}
+						top: $("header").outerHeight(true)}
 					}
 				})
 			}

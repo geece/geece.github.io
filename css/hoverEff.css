@@ -108,12 +108,11 @@ border-bottom: 2px solid #66ff00;
 }
 
 
-.top-left {
-    position: relative;
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+#top-left  a {
+    display: block;
+    width: 10%;
+    height: 10%;
+    border-bottom: none;
 }
 
 
