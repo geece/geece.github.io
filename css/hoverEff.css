@@ -168,14 +168,14 @@ border-bottom: 2px solid #66ff00;
    }
 
 .divgrid2 p{
--webkit-filter: grayscale(100%);
+/*-webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     
     filter: grayscale(100%);
   
-    filter: gray;
+    filter: gray;*/
  font-family: '華康儷宋體', serif;
  color: #262626;
 
@@ -183,14 +183,14 @@ border-bottom: 2px solid #66ff00;
 
 
 .divgrid2   img {
- -webkit-filter: grayscale(100%);
+/* -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     
     filter: grayscale(100%);
   
-    filter: gray;
+    filter: gray;*/
 }
 
 .divgrid2  img:hover  {
