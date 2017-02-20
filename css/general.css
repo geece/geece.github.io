@@ -336,11 +336,16 @@ body, html {
 	letter-spacing: 1.5px;
 }
 
-.content-section-a {
-	/*background-color: #262626;*/
-	background:linear-gradient(top,#343434,#262626);
+.back-gradient{
+background:linear-gradient(top,#343434,#262626);
 background:-moz-linear-gradient(top,#343434,#262626);
 background:-webkit-linear-gradient(top,#343434,#262626);
+
+}
+
+.content-section-a {
+	/*background-color: #262626;*/
+	
 	color:#ffffff;
 	font-family: '華康儷宋體', serif;
 	padding: 90px 0; 
@@ -349,9 +354,7 @@ background:-webkit-linear-gradient(top,#343434,#262626);
 
 .content-section-b {
 	/*background-color: #262626;*/
-	background:linear-gradient(top,#343434,#262626);
-background:-moz-linear-gradient(top,#343434,#262626);
-background:-webkit-linear-gradient(top,#343434,#262626);
+	
 	color:#ffffff;
 	
 	font-family: '華康儷宋體', serif;
