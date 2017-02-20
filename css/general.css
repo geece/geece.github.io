@@ -337,7 +337,10 @@ body, html {
 }
 
 .content-section-a {
-	background-color: #262626;
+	/*background-color: #262626;*/
+	background:linear-gradient(top,#343434,#262626);
+background:-moz-linear-gradient(top,#343434,#262626);
+background:-webkit-linear-gradient(top,#343434,#262626);
 	color:#ffffff;
 	font-family: '華康儷宋體', serif;
 	padding: 90px 0; 
@@ -345,7 +348,10 @@ body, html {
 }
 
 .content-section-b {
-	background-color: #262626;
+	/*background-color: #262626;*/
+	background:linear-gradient(top,#343434,#262626);
+background:-moz-linear-gradient(top,#343434,#262626);
+background:-webkit-linear-gradient(top,#343434,#262626);
 	color:#ffffff;
 	
 	font-family: '華康儷宋體', serif;
