@@ -75,7 +75,40 @@
 
 		</div>
 
+	<!-- NavBar-->
+	<nav id="nav" class="navbar navbar-default" role="navigation" style="z-index:-1;">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					
+				</button>
 
+			</div>
+
+			<div  class="collapse navbar-collapse navbar-right navbar-ex1-collapse " >
+				<ul class="nav navbar-nav " itemscope itemtype="http://www.schema.org/SiteNavigationElement" >
+					<li class="menuItem" itemprop="name"><a itemprop="url" href="#about" onclick="show_div('about')" >關於綠豐</a></li>	
+					<li class="dropdown" itemprop="name">
+						<a href="#whatis" onclick="show_div('whatis');" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">服務項目<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://geece.com.tw/product/airconditioner/#div-link2">空調工程</a></li>
+							<li><a href="http://geece.com.tw/product/cold/#div-link">冷凍冷藏工程</a></li>					
+							<li><a href="http://geece.com.tw/product/power/#div-link3">機電工程</a></li>
+							<li><a href="http://geece.com.tw/product/gdp/#div-link4">輔助認證PIC/S/GDP</a></li>
+
+							<li><a href="http://geece.com.tw/product/fix/">維修保養</a></li>
+						</ul>
+					</li>
+					<li class="menuItem" itemprop="name"><a itemprop="url" href="#screen">工程實績</a></li>						
+					<li class="menuItem" itemprop="name" ><a itemprop="url" href="#ca" onclick="show_div('ca');" >認證相關</a></li>											
+					<li class="menuItem" itemprop="name"><a itemprop="url" href="http://geece.com.tw/gdp.html"  >法規相關</a></li>					
+					<li class="menuItem" itemprop="name"><a itemprop="url" href="#contact">聯絡我們</a></li>
+				</ul>
+			</div>
+
+
+		</div>
+	</nav> 
 
 
 
@@ -183,38 +216,47 @@
 			
 
 
-			<footer id="contact" >
-				<div class="container">
-					<div class="row">
-						<div class="col-md-7">
-							<h3 class="footer-title">聯絡我們</h3>
+		<footer id="contact" >
+		<div class="container">
+			<div class="row">
+				<div class=" col-lg-1 col-md-1 hidden-xs hidden-md "  >
 
-							<a href="https://goo.gl/maps/Qq3rpL3x9by" target="_blank">
-								<img class="rotate"  src="http://geece.com.tw/img/icon/map.svg"/><br>
-							</a> 			
-							<address>
-								台北市104中山區吉林路231號3F<br>
-							</address>
-							電話:<a href="tel:02-2562-8956"> 02-2562-8956</a><br>
-							傳真: 02-2562-8905<br>		
-						</div> 
-						<div class="col-md-5">
-							<div class="footer-banner">
-							</h3> <h3 class="footer-title">分享</h3>
-							<li class="social"> 
-								<a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
-								<a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
-								<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
-								<a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
-							</li>
+				</div >
+
+
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 center-block">
+					<div class="row">
+						<div class="row">
+							<br>
 						</div>
-						Special thanks
-						free svg icon  from <a href="http://www.flaticon.com/"> Flaticon</a>
+						<img class="pull-left img-responsive"  height="90" width="73" src="/img/icon/logo-color-01.svg"/>
+						<p class="h3-en "><br>&nbsp;&nbsp;GEECE<br></p>
+						<p class="footer-p-s">&nbsp;&nbsp;&nbsp;&nbsp;節能&nbsp;&nbsp;機電&nbsp;環控工程</p>
 					</div>
+
+					<div class="row">
+						<br>
+					</div>
+					<div class="row">
+						<p class="copyright">COPYRIGHT@ 2017 GEECE.INC </p>	
+					</div>
+					
+				</div> 
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+					<h3 class="h3-ch ">聯絡我們</h3>      					
+					<br><p>電話:&nbsp;<a href="tel:02-2562-8956" > 02-2562-8956</a><br></p>
+					<br><p>傳真:&nbsp; 02-2562-8905<br></p>
+					<address>
+						<br>地址:台北市104中山區吉林路231號3F
+					</address>		
+				</div> 
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+					<div class="row">
+						<br>
+					</div>
+					<iframe class="embed-responsive-item blackborder" width="300" height="225"  src="https://www.google.com/maps/embed/v1/place?q=%E7%B6%A0%E8%B1%90%E8%88%88%E6%A5%AD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&key=AIzaSyBq7e92IllsPnqLrGM64UJzNIASV2qTAoQ" allowfullscreen></iframe>
 				</div>
-			</div>
-		</footer>
-		
+			</footer>
 		
 		<!-- JavaScript -->
 		<script src="http://geece.com.tw/js/jquery-1.10.2.js"></script>
