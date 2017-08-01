@@ -206,12 +206,11 @@ $(document).ready(function() {
 
 		// OwlCarousel N1
 		$("#owl-demo").owlCarousel({
-			autoPlay: 3000,
-			items : 1,
-			itemsDesktop : [1199,3],
-			itemsDesktopSmall : [979,3],
-			 loop:true,
-    margin:10,
+			lazyLoad : true,
+			  navigation : false, // Show next and prev buttons
+			  slideSpeed : 300,
+			  paginationSpeed : 400,
+			  singleItem:true
 		});
 
 		$("#owl-cold").owlCarousel({
