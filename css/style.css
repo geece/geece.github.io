@@ -22,14 +22,14 @@ http://www.andreagalanti.it
 
 @font-face {
   font-family: "MHeiHK-Bold";
-  src: url('../fonts/MHeiHK-Bold.otf');
+  src: url('../fonts/MHeiHK-Bold.ttf');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MHeiHK-Light";
-  src: url('../fonts/MHeiHK-Light.otf');
+  src: url('../fonts/MHeiHK-Light.ttf');
   font-weight: 900;
   font-style: normal;
 }
