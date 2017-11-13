@@ -7,7 +7,7 @@ http://www.andreagalanti.it
 */
 @font-face {
   font-family: "華康儷宋體";
-  src: url('../fonts/DFLiSong.ttf');
+  src: url('../fonts/華康儷中宋.ttc');
   font-weight: 900;
   font-style: normal;
 }
@@ -22,14 +22,14 @@ http://www.andreagalanti.it
 
 @font-face {
   font-family: "MHeiHK-Bold";
-  src: url('../fonts/MHeiHK-Bold.ttf');
+  src: url('../fonts/MHeiHK-Bold.otf');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MHeiHK-Light";
-  src: url('../fonts/MHeiHK-Light.ttf');
+  src: url('../fonts/MHeiHK-Light.otf');
   font-weight: 900;
   font-style: normal;
 }
