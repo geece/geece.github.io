@@ -8,9 +8,6 @@ http://www.andreagalanti.it
 @font-face {
   font-family: "華康儷宋體";
   src: 
-  local("華康儷中宋"),
-  local("華康儷宋體"),
-  local("DFLiSong"),
   url('../fonts/DFLiSong-W5-WIN-BF-01.ttf');
   font-weight: 900;
   font-style: normal;
@@ -43,7 +40,7 @@ http://www.andreagalanti.it
   url('../fonts/MHeiHK-Light.ttf');
   font-weight: 900;
   font-style: normal;
-  unicode-range: U+4E00-9FFF;
+
 }
 @font-face {
   font-family: "GOTHICB";
