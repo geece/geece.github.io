@@ -14,6 +14,7 @@ http://www.andreagalanti.it
   url('../fonts/DFLiSong-W5-WIN-BF-01.ttf');
   font-weight: 900;
   font-style: normal;
+  unicode-range: U+4E00-9FFF;
 }
 
 @font-face {
@@ -32,6 +33,7 @@ http://www.andreagalanti.it
   url('../fonts/MHeiHK-Bold.ttf');
   font-weight: 900;
   font-style: normal;
+  unicode-range: U+4E00-9FFF;
 }
 
 @font-face {
@@ -41,6 +43,7 @@ http://www.andreagalanti.it
   url('../fonts/MHeiHK-Light.ttf');
   font-weight: 900;
   font-style: normal;
+  unicode-range: U+4E00-9FFF;
 }
 @font-face {
   font-family: "GOTHICB";
