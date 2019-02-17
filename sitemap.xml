@@ -6,34 +6,67 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
-  <loc>http://geece.com.tw/</loc>
-  <lastmod>2017-01-10T07:38:54+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://geece.com.tw/</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://geece.com.tw/product/</loc>
-  <lastmod>2017-01-11T21:38:54+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://geece.com.tw/index.html</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://geece.com.tw/product/gdp/</loc>
-  <lastmod>2017-01-15T21:38:54+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://geece.com.tw/static/about.html</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://geece.com.tw/product/power/</loc>
-  <lastmod>2017-01-15T21:38:54+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://geece.com.tw/static/service.html</loc>
+  <lastmod>2019-02-13T16:18:04+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://geece.com.tw/product/airconditioner/</loc>
-  <lastmod>2017-01-15T21:38:54+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://geece.com.tw/static/performance.html</loc>
+  <lastmod>2019-02-13T16:18:04+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://geece.com.tw/product/cold/</loc>
-  <lastmod>2017-01-15T21:38:54+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://geece.com.tw/static/article.html</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://geece.com.tw/static/blogpages/blog06.html</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://geece.com.tw/static/blogpages/blog02.html</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://geece.com.tw/static/blogpages/blog03.html</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://geece.com.tw/static/blogpages/blog01.html</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://geece.com.tw/static/blogpages/blog04.html</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://geece.com.tw/static/blogpages/blog05.html</loc>
+  <lastmod>2019-02-13T16:18:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
