@@ -218,6 +218,7 @@ h1 {
 }
 
 .lockBack {
+  width: 100%;
   position: fixed;
 }
 
@@ -261,6 +262,11 @@ nav {
 .navBgWhite .subMainButton {
   color: #a8a8a8;
 }
+.navBgWhite .menuBtn:hover,
+.navBgWhite .subMainButton:hover {
+  color: black;
+  border-bottom: #A2FA9C 2px solid;
+}
 .navBgWhite #hamburger .burg {
   background: black;
 }
@@ -278,6 +284,7 @@ nav {
 .navBgNone .menuBtn:hover,
 .navBgNone .subMainButton:hover {
   color: #dbdbdb;
+  border-bottom: #A2FA9C 2px solid;
 }
 
 .navBgNone .subMainButton,
@@ -341,11 +348,9 @@ nav {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
 }
-.menuContainer ul li a:hover {
-  border-bottom: #A2FA9C 2px solid;
-}
 
-.subNav {
+.subNav,
+.subNavScroll {
   position: absolute;
   width: 100%;
   top: 0;
@@ -364,16 +369,19 @@ nav {
   -ms-transform: translateY(-140px);
   -o-transform: translateY(-140px);
 }
-.subNav ul {
+.subNav ul,
+.subNavScroll ul {
   max-width: 1800px;
   margin: auto;
   width: 90%;
   height: 60px;
 }
-.subNav ul li {
+.subNav ul li,
+.subNavScroll ul li {
   display: inline-block;
 }
-.subNav ul li a {
+.subNav ul li a,
+.subNavScroll ul li a {
   font-size: 16px;
   text-align: center;
   padding: 6px 0;
@@ -385,8 +393,21 @@ nav {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
 }
-.subNav ul li a:hover {
+.subNav ul li a:hover,
+.subNavScroll ul li a:hover {
   border-bottom: #A2FA9C 2px solid;
+}
+
+.subNavScroll {
+  display: none;
+  top: 79px;
+  height: 60px;
+  border-top: 0.5px solid #c0c0c0;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
 }
 
 .subButton {
@@ -403,7 +424,8 @@ nav {
   border-bottom: 0.5px solid #c0c0c0;
 }
 
-.navHighLight {
+#navHighLight {
+  color: white;
   border-bottom: #A2FA9C 2px solid;
 }
 
@@ -789,10 +811,17 @@ header {
   overflow: hidden;
 }
 
+.bannerHide,
+.bannerPadHide,
+.bannerMobileHide {
+  display: none;
+}
+
 .bannerImgBox {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: black;
   background-image: url("../img/banner/home01.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1347,6 +1376,7 @@ a.categoryButtonBox_mobile:hover .buttonGreenLine_mobile {
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
+  font-size: 16px;
 }
 
 .buttonSeeMore {
@@ -1429,9 +1459,15 @@ a.categoryButtonBox_mobile:hover .buttonGreenLine_mobile {
 
 #blogMobile_02 .blogImage,
 #blogMobile_02 .blogContent,
+#blogMobile_02 .blogShadowSec,
 #blogMobile_03 .blogImage,
-#blogMobile_03 .blogContent {
+#blogMobile_03 .blogContent,
+#blogMobile_03 .blogShadowSec {
   display: none;
+}
+#blogMobile_02 .mainBlogCategory,
+#blogMobile_03 .mainBlogCategory {
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .noActive_blogMobile {
@@ -1495,19 +1531,25 @@ a.categoryButtonBox_mobile:hover .buttonGreenLine_mobile {
   color: #A8A8A8;
 }
 
-.imageShadow {
-  filter: drop-shadow(0 5px 5px rgba(173, 173, 173, 0.2));
-  -webkit-filter: drop-shadow(0 5px 5px rgba(173, 173, 173, 0.2));
-}
-
 .blogImage {
   width: 100%;
   height: 300px;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 93%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 93%);
   background: url("/static/img/blog/06Banner.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.blogShadowSec {
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  filter: drop-shadow(0 -5px 5px rgba(173, 173, 173, 0.5));
+  -webkit-filter: drop-shadow(0 -5px 5px rgba(173, 173, 173, 0.5));
 }
 
 #mobileBlogImg_01 {
@@ -1558,11 +1600,19 @@ a.categoryButtonBox_mobile:hover .buttonGreenLine_mobile {
 }
 
 .blogCategory {
-  margin: 12px 0;
+  margin: 0 0 12px 0;
   color: #79e072;
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 110%;
+}
+
+.mainBlogCategory {
+  margin: -10px 0 0px 0;
+  padding-bottom: 12px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .blogLabel {
@@ -1925,11 +1975,15 @@ a.switchBlogBox:hover .switchLabel {
 
   .blogCategory,
   .blogDate {
-    font-size: 10px;
+    font-size: 14px;
+  }
+
+  .mainBlogCategory {
+    padding-bottom: 10px;
   }
 
   .blogLabel {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .blogImage {
@@ -1937,15 +1991,18 @@ a.switchBlogBox:hover .switchLabel {
   }
 
   .blogContent {
-    font-size: 11px;
+    font-size: 14px;
     margin: 10px 0 20px 0;
+  }
+  .blogContent a {
+    font-size: 14px;
   }
 
   .seeAllCategory a {
     width: 60%;
     max-width: 60%;
     padding: 20px 10px;
-    font-size: 80%;
+    font-size: 14px;
   }
 
   .cooperationSec {

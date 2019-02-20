@@ -202,6 +202,7 @@ h1 {
 }
 
 .lockBack {
+  width: 100%;
   position: fixed;
 }
 
@@ -245,6 +246,11 @@ nav {
 .navBgWhite .subMainButton {
   color: #a8a8a8;
 }
+.navBgWhite .menuBtn:hover,
+.navBgWhite .subMainButton:hover {
+  color: black;
+  border-bottom: #A2FA9C 2px solid;
+}
 .navBgWhite #hamburger .burg {
   background: black;
 }
@@ -262,6 +268,7 @@ nav {
 .navBgNone .menuBtn:hover,
 .navBgNone .subMainButton:hover {
   color: #dbdbdb;
+  border-bottom: #A2FA9C 2px solid;
 }
 
 .navBgNone .subMainButton,
@@ -325,11 +332,9 @@ nav {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
 }
-.menuContainer ul li a:hover {
-  border-bottom: #A2FA9C 2px solid;
-}
 
-.subNav {
+.subNav,
+.subNavScroll {
   position: absolute;
   width: 100%;
   top: 0;
@@ -348,16 +353,19 @@ nav {
   -ms-transform: translateY(-140px);
   -o-transform: translateY(-140px);
 }
-.subNav ul {
+.subNav ul,
+.subNavScroll ul {
   max-width: 1800px;
   margin: auto;
   width: 90%;
   height: 60px;
 }
-.subNav ul li {
+.subNav ul li,
+.subNavScroll ul li {
   display: inline-block;
 }
-.subNav ul li a {
+.subNav ul li a,
+.subNavScroll ul li a {
   font-size: 16px;
   text-align: center;
   padding: 6px 0;
@@ -369,8 +377,21 @@ nav {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
 }
-.subNav ul li a:hover {
+.subNav ul li a:hover,
+.subNavScroll ul li a:hover {
   border-bottom: #A2FA9C 2px solid;
+}
+
+.subNavScroll {
+  display: none;
+  top: 79px;
+  height: 60px;
+  border-top: 0.5px solid #c0c0c0;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
 }
 
 .subButton {
@@ -387,7 +408,8 @@ nav {
   border-bottom: 0.5px solid #c0c0c0;
 }
 
-.navHighLight {
+#navHighLight {
+  color: white;
   border-bottom: #A2FA9C 2px solid;
 }
 
