@@ -1,12 +1,1 @@
-$(document).ready(function () {
-    // Body Movin - About Icon
-    window.onload = function () {
-        lottie.loadAnimation({
-            container: document.getElementById('aboutLogoAnimate'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: 'js/projectGV.json',
-        });
-    }
-});
+$(document).ready(function(){window.onload=function(){lottie.loadAnimation({container:document.getElementById("aboutLogoAnimate"),renderer:"svg",loop:!0,autoplay:!0,path:"js/projectGV.json"})}});
