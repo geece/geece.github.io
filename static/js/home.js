@@ -3,6 +3,8 @@ $(document).ready(function () {
     var selectedSwitchBlog = 1;
     var checkSelectedBlog;
 
+    var timer = setInterval(animateNumbers, 5000);
+
     // $(".bannerHide").lazyload();
 
     $("#firstswitchBlogBox").click(function () {
@@ -73,6 +75,16 @@ $(document).ready(function () {
 
     //BODY MOVING
     window.onload = function () {
+        document.onvisibilitychange = function () {
+            if (document.visibilityState == "visible") {
+                console.log("visible fire timer");
+                timer = setInterval(animateNumbers, 5000) //重新开始定时器
+            } else {
+                console.log("invisible clear timer");
+                clearInterval(timer) //清除定时器
+            }
+        }
+
         lottie.loadAnimation({
             container: document.getElementById('homeLoadLottie'),
             renderer: 'svg',
@@ -127,7 +139,6 @@ $(document).ready(function () {
 
     $("#circleUpButton").click(function () {
         event.preventDefault();
-        clearInterval(interval);
         if (1 < selected) {
             selected--;
         } else {
@@ -146,7 +157,6 @@ $(document).ready(function () {
     // iPad Button
     $("#circleDownButton_M").click(function () {
         event.preventDefault();
-        clearInterval(interval);
         if (selected < 6) {
             selected++;
         } else {
@@ -164,7 +174,6 @@ $(document).ready(function () {
 
     $("#circleUpButton_M").click(function () {
         event.preventDefault();
-        clearInterval(interval);
         if (1 < selected) {
             selected--;
         } else {
@@ -930,19 +939,9 @@ $(document).ready(function () {
     }
 
     // Infinite Loop
-    // 偵測頁面是否被觸發
-    var timer = setInterval(animateNumbers, 5000);
-    document.onvisibilitychange = function () {
-        if (document.visibilityState == "visible") {
-            console.log("visible fire timer");
-            timer = setInterval(animateNumbers, 5000) //重新开始定时器
-        } else {
-            console.log("invisible clear timer");
-            clearInterval(timer) //清除定时器
-        }
-    }
 
     function animateNumbers() {
+        console.log("animateNumbers");
         if (selected < 6) {
             selected++;
         } else {
