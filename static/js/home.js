@@ -934,8 +934,10 @@ $(document).ready(function () {
     var timer = setInterval(animateNumbers, 5000);
     document.onvisibilitychange = function () {
         if (document.visibilityState == "visible") {
+            console.log("visible fire timer");
             timer = setInterval(animateNumbers, 5000) //重新开始定时器
         } else {
+            console.log("invisible clear timer");
             clearInterval(timer) //清除定时器
         }
     }
