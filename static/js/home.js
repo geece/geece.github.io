@@ -130,9 +130,9 @@ $(document).ready(function () {
         changeHeadContent();
         changeNumClass();
 
-        $("#circleUpButton,#circleDownButton,#circleCategory,#circleTitle,#circleSeeMoreLink").fadeOut();
+        $("#circleUpButton,#circleDownButton").fadeOut();
         $(".homeAnimate").fadeIn(500).delay(500).fadeOut(500);
-        $("#circleUpButton,#circleDownButton,#circleCategory,#circleTitle,#circleSeeMoreLink").delay(1000).fadeIn();
+        $("#circleUpButton,#circleDownButton").delay(1000).fadeIn();
         clearInterval(timer) //清除定时器
         timer = setInterval(animateNumbers, 5000) //重新开始定时器
     });
@@ -146,10 +146,9 @@ $(document).ready(function () {
         }
         changeHeadContent();
         changeNumClass();
-
-        $("#circleUpButton,#circleDownButton,#circleCategory,#circleTitle,#circleSeeMoreLink").fadeOut();
+        $("#circleUpButton,#circleDownButton").fadeOut();
         $(".homeAnimate").fadeIn(500).delay(500).fadeOut(500);
-        $("#circleUpButton,#circleDownButton,#circleCategory,#circleTitle,#circleSeeMoreLink").delay(1000).fadeIn();
+        $("#circleUpButton,#circleDownButton").delay(1000).fadeIn();
         clearInterval(timer) //清除定时器
         timer = setInterval(animateNumbers, 5000) //重新开始定时器
     });
@@ -200,7 +199,6 @@ $(document).ready(function () {
     function changeHeadContent() {
 
         if (selected === 1) {
-
             if (900 < screenWidth) {
                 $("#circleCategory").text("醫療物流");
                 $("#circleTitle").text("冷凍冷藏庫工程");
@@ -951,9 +949,9 @@ $(document).ready(function () {
         changeNumClass();
 
         if (900 < screenWidth) {
-            $("#circleUpButton,#circleDownButton,#circleCategory,#circleTitle,#circleSeeMoreLink").fadeOut();
+            $("#circleUpButton,#circleDownButton").fadeOut();
             $(".homeAnimate").fadeIn(500).delay(500).fadeOut(500);
-            $("#circleUpButton,#circleDownButton,#circleDownButton,#circleCategory,#circleTitle,#circleSeeMoreLink").delay(1000).fadeIn();
+            $("#circleUpButton,#circleDownButton").delay(1000).fadeIn();
         } else if (screenWidth <= 900) {
             $("#circleUpButton_M,#circleDownButton_M").fadeOut();
             $(".homeAnimate_mobile").fadeIn(500).delay(500).fadeOut(500);

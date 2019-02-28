@@ -876,6 +876,8 @@ main {
   text-align: center;
   margin-top: 20px;
   display: none;
+  position: relative;
+  z-index: 21;
 }
 .sliderMenu ul li {
   width: 100%;
@@ -934,7 +936,8 @@ main {
   padding: 10px 50px;
 }
 
-.mobileChart {
+.mobileChart,
+.mobileSubOverLay {
   display: none;
 }
 
@@ -1073,6 +1076,15 @@ main {
   .mobileChart {
     display: block;
     padding: 10px 25px;
+  }
+
+  .mobileSubOverLay {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .photoBox {
