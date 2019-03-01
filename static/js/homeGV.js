@@ -1,8 +1,4 @@
 $(document).ready(function () {
-    // lazy load
-    const observer = lozad();
-    observer.observe();
-
     // BLOG HOVER
     var selectedSwitchBlog = 1;
     var checkSelectedBlog;
