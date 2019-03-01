@@ -1,18 +1,7 @@
 $(document).ready(function () {
-    // Loading Image
-
-    loadImage();
-
-    function loadImage() {
-        $('.photoImg a img').each(function () {
-            var el = this;
-            var image = new Image();
-            image.src = el.src;
-            image.onload = function () {
-                $(el).addClass('loaded');
-            }
-        })
-    }
+    // lazy load
+    const observer = lozad();
+    observer.observe();
 
     // Submenu
 
