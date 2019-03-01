@@ -121,7 +121,6 @@ $(document).ready(function () {
     }
 
     var pageName = localStorage.getItem("pageName");
-
     if (pageName === "freeze") {
         // show freeze
         $("#bBox,#cBox,#dBox,#eBox").hide();
@@ -203,14 +202,16 @@ $(document).ready(function () {
 
     // Scroll Up Animate
     $(window).scroll(function () {
-        $('.photoImg').each(function (i) {
-            var top_of_object = $(this).offset().top + $(this).outerHeight() + 240;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > top_of_object) {
-                $(this).find("a .overLayer").css("opacity", "1");
-            } else {
-                $(this).find("a .overLayer").css("opacity", "0");
-            }
-        });
+        if (isMobile()) {
+            $('.photoImg').each(function (i) {
+                var top_of_object = $(this).offset().top + $(this).outerHeight() + 240;
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if (bottom_of_window > top_of_object) {
+                    $(this).find("a .overLayer").css("opacity", "1");
+                } else {
+                    $(this).find("a .overLayer").css("opacity", "0");
+                }
+            });
+        }
     });
 });
