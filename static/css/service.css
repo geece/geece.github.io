@@ -973,7 +973,6 @@ main {
 }
 .photoImg a img {
   width: 100%;
-  opacity: 1;
   background-color: #e1e1e1;
   transition: opacity .2s ease-in .25s;
   -webkit-transition: opacity .2s ease-in .25s;
