@@ -127,8 +127,8 @@ $(document).ready(function () {
         } else {
             selected = 1;
         }
-        changeHeadContent();
-        changeNumClass();
+        // changeHeadContent();
+        // changeNumClass();
 
         $("#circleUpButton,#circleDownButton").fadeOut();
         $(".homeAnimate").fadeIn(500).delay(500).fadeOut(500);
@@ -144,8 +144,8 @@ $(document).ready(function () {
         } else {
             selected = 6;
         }
-        changeHeadContent();
-        changeNumClass();
+        // changeHeadContent();
+        // changeNumClass();
         $("#circleUpButton,#circleDownButton").fadeOut();
         $(".homeAnimate").fadeIn(500).delay(500).fadeOut(500);
         $("#circleUpButton,#circleDownButton").delay(1000).fadeIn();
@@ -161,8 +161,8 @@ $(document).ready(function () {
         } else {
             selected = 1;
         }
-        changeHeadContent();
-        changeNumClass();
+        // changeHeadContent();
+        // changeNumClass();
 
         $("#circleUpButton_M,#circleDownButton_M").fadeOut();
         $(".homeAnimate_mobile").fadeIn(500).delay(300).fadeOut(500);
@@ -178,8 +178,8 @@ $(document).ready(function () {
         } else {
             selected = 6;
         }
-        changeHeadContent();
-        changeNumClass();
+        // changeHeadContent();
+        // changeNumClass();
 
         $("#circleUpButton_M,#circleDownButton_M").fadeOut();
         $(".homeAnimate_mobile").fadeIn(500).delay(300).fadeOut(500);
@@ -939,7 +939,6 @@ $(document).ready(function () {
     // Infinite Loop
 
     function animateNumbers() {
-        console.log("animateNumbers");
         if (selected < 6) {
             selected++;
         } else {
