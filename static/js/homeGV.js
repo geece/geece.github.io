@@ -2,7 +2,6 @@ $(document).ready(function () {
     // BLOG HOVER
     var selectedSwitchBlog = 1;
     var checkSelectedBlog;
-
     var timer = setInterval(animateNumbers, 5000);
 
     // $(".bannerHide").lazyload();
@@ -122,69 +121,74 @@ $(document).ready(function () {
     // Circle Body Moving
     $("#circleDownButton").click(function () {
         event.preventDefault();
+        clearInterval(timer) //清除定时器
         if (selected < 6) {
             selected++;
         } else {
             selected = 1;
         }
-        // changeHeadContent();
-        // changeNumClass();
+
+        changeHeadContent();
+        changeNumClass();
 
         $("#circleUpButton,#circleDownButton").fadeOut();
         $(".homeAnimate").fadeIn(500).delay(500).fadeOut(500);
         $("#circleUpButton,#circleDownButton").delay(1000).fadeIn();
-        clearInterval(timer) //清除定时器
         timer = setInterval(animateNumbers, 5000) //重新开始定时器
     });
 
     $("#circleUpButton").click(function () {
         event.preventDefault();
+        clearInterval(timer) //清除定时器
         if (1 < selected) {
             selected--;
         } else {
             selected = 6;
         }
-        // changeHeadContent();
-        // changeNumClass();
+
+        changeHeadContent();
+        changeNumClass();
+
         $("#circleUpButton,#circleDownButton").fadeOut();
         $(".homeAnimate").fadeIn(500).delay(500).fadeOut(500);
         $("#circleUpButton,#circleDownButton").delay(1000).fadeIn();
-        clearInterval(timer) //清除定时器
         timer = setInterval(animateNumbers, 5000) //重新开始定时器
     });
 
     // iPad Button
     $("#circleDownButton_M").click(function () {
         event.preventDefault();
+        clearInterval(timer) //清除定时器
         if (selected < 6) {
             selected++;
         } else {
             selected = 1;
         }
-        // changeHeadContent();
-        // changeNumClass();
+
+        changeHeadContent();
+        changeNumClass();
 
         $("#circleUpButton_M,#circleDownButton_M").fadeOut();
         $(".homeAnimate_mobile").fadeIn(500).delay(300).fadeOut(500);
         $("#circleUpButton_M,#circleDownButton_M").delay(800).fadeIn();
-        clearInterval(timer) //清除定时器
         timer = setInterval(animateNumbers, 5000) //重新开始定时器
     });
 
     $("#circleUpButton_M").click(function () {
         event.preventDefault();
+        clearInterval(timer) //清除定时器
         if (1 < selected) {
             selected--;
         } else {
             selected = 6;
         }
-        // changeHeadContent();
-        // changeNumClass();
+
+        changeHeadContent();
+        changeNumClass();
 
         $("#circleUpButton_M,#circleDownButton_M").fadeOut();
         $(".homeAnimate_mobile").fadeIn(500).delay(300).fadeOut(500);
         $("#circleUpButton_M,#circleDownButton_M").delay(800).fadeIn();
-        clearInterval(timer) //清除定时器
         timer = setInterval(animateNumbers, 5000) //重新开始定时器
     });
 
@@ -939,6 +943,7 @@ $(document).ready(function () {
     // Infinite Loop
 
     function animateNumbers() {
+        console.log("animate");
         if (selected < 6) {
             selected++;
         } else {
@@ -948,6 +953,7 @@ $(document).ready(function () {
         changeNumClass();
 
         if (900 < screenWidth) {
+            console.log("animate");
             $("#circleUpButton,#circleDownButton").fadeOut();
             $(".homeAnimate").fadeIn(500).delay(500).fadeOut(500);
             $("#circleUpButton,#circleDownButton").delay(1000).fadeIn();
