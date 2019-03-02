@@ -74,15 +74,15 @@ $(document).ready(function () {
 
     //BODY MOVING
     window.onload = function () {
-        document.onvisibilitychange = function () {
-            if (document.visibilityState == "visible") {
-                console.log("visible fire timer");
-                timer = setInterval(animateNumbers, 5000) //重新开始定时器
-            } else {
-                console.log("invisible clear timer");
-                clearInterval(timer) //清除定时器
-            }
-        }
+        // document.onvisibilitychange = function () {
+        //     if (document.visibilityState == "visible") {
+        //         console.log("visible fire timer");
+        //         timer = setInterval(animateNumbers, 5000) //重新开始定时器
+        //     } else {
+        //         console.log("invisible clear timer");
+        //         clearInterval(timer) //清除定时器
+        //     }
+        // }
 
         lottie.loadAnimation({
             container: document.getElementById('homeLoadLottie'),
@@ -98,6 +98,19 @@ $(document).ready(function () {
             'overflow-x': 'hidden'
         });
     }
+
+    $(window).focus(function () {
+        if (timer == null) {
+            //Use came back to the tab
+            timer = setInterval(animateNumbers, 5000) //重新开始定时器
+        }
+    });
+
+    $(window).blur(function () {
+        //User left tab
+        clearInterval(timer);
+        timer = null;
+    });
 
     lottie.loadAnimation({
         container: document.getElementById('homeLottie'),
@@ -943,7 +956,6 @@ $(document).ready(function () {
     // Infinite Loop
 
     function animateNumbers() {
-        console.log("animate");
         if (selected < 6) {
             selected++;
         } else {
@@ -953,7 +965,6 @@ $(document).ready(function () {
         changeNumClass();
 
         if (900 < screenWidth) {
-            console.log("animate");
             $("#circleUpButton,#circleDownButton").fadeOut();
             $(".homeAnimate").fadeIn(500).delay(500).fadeOut(500);
             $("#circleUpButton,#circleDownButton").delay(1000).fadeIn();
