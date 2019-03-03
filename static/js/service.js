@@ -15,69 +15,69 @@ $(document).ready(function () {
         $(this).find(".overLayer").css("opacity", "0");
     });
 
-    $(".photoImg a").click(function () {
+    $(".photoImg a").click(function (event) {
         event.preventDefault();
     });
 
-    $(".showAbox").click(function () {
+    $(".showAbox").click(function (event) {
         event.preventDefault();
         $("#bBox,#cBox,#dBox,#eBox").hide();
         $("#aBox").fadeIn();
     });
 
-    $(".m_Abox").click(function () {
+    $(".m_Abox").click(function (event) {
         event.preventDefault();
         $("#bBox,#cBox,#dBox,#eBox").hide();
         $("#aBox").fadeIn();
         checkSlide();
     });
 
-    $(".showBbox").click(function () {
+    $(".showBbox").click(function (event) {
         event.preventDefault();
         $("#aBox,#cBox,#dBox,#eBox").hide();
         $("#bBox").fadeIn();
     });
 
-    $(".m_Bbox").click(function () {
+    $(".m_Bbox").click(function (event) {
         event.preventDefault();
         $("#aBox,#cBox,#dBox,#eBox").hide();
         $("#bBox").fadeIn();
         checkSlide();
     });
 
-    $(".showCbox").click(function () {
+    $(".showCbox").click(function (event) {
         event.preventDefault();
         $("#aBox,#bBox,#dBox,#eBox").hide();
         $("#cBox").fadeIn();
     });
 
-    $(".m_Cbox").click(function () {
+    $(".m_Cbox").click(function (event) {
         event.preventDefault();
         $("#aBox,#bBox,#dBox,#eBox").hide();
         $("#cBox").fadeIn();
         checkSlide();
     });
 
-    $(".showDbox").click(function () {
+    $(".showDbox").click(function (event) {
         event.preventDefault();
         $("#aBox,#bBox,#cBox,#eBox").hide();
         $("#dBox").fadeIn();
     });
 
-    $(".m_Dbox").click(function () {
+    $(".m_Dbox").click(function (event) {
         event.preventDefault();
         $("#aBox,#bBox,#cBox,#eBox").hide();
         $("#dBox").fadeIn();
         checkSlide();
     });
 
-    $(".showEbox").click(function () {
+    $(".showEbox").click(function (event) {
         event.preventDefault();
         $("#aBox,#bBox,#dBox,#cBox").hide();
         $("#eBox").fadeIn();
     });
 
-    $(".m_Ebox").click(function () {
+    $(".m_Ebox").click(function (event) {
         event.preventDefault();
         $("#aBox,#bBox,#dBox,#cBox").hide();
         $("#eBox").fadeIn();
@@ -85,7 +85,7 @@ $(document).ready(function () {
     });
 
     // Show mobile category button
-    $(".tabButtonBox_mobile").click(function () {
+    $(".tabButtonBox_mobile").click(function (event) {
         event.preventDefault();
         checkSlide();
     });

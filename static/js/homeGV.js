@@ -132,7 +132,7 @@ $(document).ready(function () {
     var rotateNum = 0;
 
     // Circle Body Moving
-    $("#circleDownButton").click(function () {
+    $("#circleDownButton").click(function (event) {
         event.preventDefault();
         clearInterval(timer) //清除定时器
         if (selected < 6) {
@@ -150,7 +150,7 @@ $(document).ready(function () {
         timer = setInterval(animateNumbers, 5000) //重新开始定时器
     });
 
-    $("#circleUpButton").click(function () {
+    $("#circleUpButton").click(function (event) {
         event.preventDefault();
         clearInterval(timer) //清除定时器
         if (1 < selected) {
@@ -169,7 +169,7 @@ $(document).ready(function () {
     });
 
     // iPad Button
-    $("#circleDownButton_M").click(function () {
+    $("#circleDownButton_M").click(function (event) {
         event.preventDefault();
         clearInterval(timer) //清除定时器
         if (selected < 6) {
@@ -187,7 +187,7 @@ $(document).ready(function () {
         timer = setInterval(animateNumbers, 5000) //重新开始定时器
     });
 
-    $("#circleUpButton_M").click(function () {
+    $("#circleUpButton_M").click(function (event) {
         event.preventDefault();
         clearInterval(timer) //清除定时器
         if (1 < selected) {
@@ -298,43 +298,43 @@ $(document).ready(function () {
             // DESKTOP
             //1
             $(".oneBox").css({
-                "top": "85px",
-                "left": "-10px",
+                "top": "82px",
+                "left": "20px",
                 "right": "auto"
             });
 
             //2
             $(".topOneNumBox").css({
-                "top": "0",
-                "left": "70px",
+                "top": "10px",
+                "left": "110px",
                 "right": "auto"
             });
 
             //3
             $(".topTwoNumBox").css({
                 "top": "40px",
-                "right": "-40px",
+                "right": "-50px",
                 "left": "auto"
             });
 
             //6
             $(".bottomOneNumBox").css({
-                "top": "180px",
-                "left": "40px",
+                "top": "160px",
+                "left": "90px",
                 "right": "auto"
             });
 
             //5
             $(".bottomTwoNumBox").css({
                 "top": "150px",
-                "left": "100px",
+                "left": "150px",
                 "right": "auto"
             });
 
             //4
             $(".bottomThreeNumBox").css({
                 "top": "180px",
-                "right": "-10px",
+                "right": "-50px",
                 "left": "auto"
             });
 
@@ -385,7 +385,7 @@ $(document).ready(function () {
             //5
             $(".bottomTwoNumBox_M").css({
                 "top": "150px",
-                "left": "100px",
+                "left": "150px",
                 "right": "auto"
             });
 
@@ -404,43 +404,43 @@ $(document).ready(function () {
 
             //2
             $(".topOneNumBox").css({
-                "top": "85px",
-                "left": "-10px",
+                "top": "82px",
+                "left": "20px",
                 "right": "auto"
             });
 
             //3
             $(".topTwoNumBox").css({
-                "top": "0",
-                "left": "70px",
+                "top": "10px",
+                "left": "110px",
                 "right": "auto"
             });
 
             //4
             $(".bottomThreeNumBox").css({
                 "top": "40px",
-                "right": "-40px",
+                "right": "-50px",
                 "left": "auto"
             });
 
             //1
             $(".oneBox").css({
-                "top": "180px",
-                "left": "40px",
+                "top": "160px",
+                "left": "90px",
                 "right": "auto"
             });
 
             //6
             $(".bottomOneNumBox").css({
                 "top": "150px",
-                "left": "100px",
+                "left": "150px",
                 "right": "auto"
             });
 
             //5
             $(".bottomTwoNumBox").css({
                 "top": "180px",
-                "right": "-10px",
+                "right": "-50px",
                 "left": "auto"
             });
 
@@ -477,8 +477,6 @@ $(document).ready(function () {
                 });
             }
 
-
-
             //4
             $(".bottomThreeNumBox_M").css({
                 "top": "40px",
@@ -514,43 +512,43 @@ $(document).ready(function () {
 
             //3
             $(".topTwoNumBox").css({
-                "top": "85px",
-                "left": "-10px",
+                "top": "82px",
+                "left": "20px",
                 "right": "auto"
             });
 
             //4
             $(".bottomThreeNumBox").css({
-                "top": "0",
-                "left": "70px",
+                "top": "10px",
+                "left": "110px",
                 "right": "auto"
             });
 
             //5
             $(".bottomTwoNumBox").css({
                 "top": "40px",
-                "right": "-40px",
+                "right": "-50px",
                 "left": "auto"
             });
 
             //2
             $(".topOneNumBox").css({
-                "top": "180px",
-                "left": "40px",
+                "top": "160px",
+                "left": "90px",
                 "right": "auto"
             });
 
             //1
             $(".oneBox").css({
                 "top": "150px",
-                "left": "100px",
+                "left": "150px",
                 "right": "auto"
             });
 
             //6
             $(".bottomOneNumBox").css({
                 "top": "180px",
-                "right": "-10px",
+                "right": "-50px",
                 "left": "auto"
             });
 
@@ -625,43 +623,43 @@ $(document).ready(function () {
 
             //4
             $(".bottomThreeNumBox").css({
-                "top": "85px",
-                "left": "-10px",
+                "top": "82px",
+                "left": "20px",
                 "right": "auto"
             });
 
             //5
             $(".bottomTwoNumBox").css({
-                "top": "0",
-                "left": "70px",
+                "top": "10px",
+                "left": "110px",
                 "right": "auto"
             });
 
             //6
             $(".bottomOneNumBox").css({
                 "top": "40px",
-                "right": "-40px",
+                "right": "-50px",
                 "left": "auto"
             });
 
             //3
             $(".topTwoNumBox").css({
-                "top": "180px",
-                "left": "40px",
+                "top": "160px",
+                "left": "90px",
                 "right": "auto"
             });
 
             //2
             $(".topOneNumBox").css({
                 "top": "150px",
-                "left": "100px",
+                "left": "150px",
                 "right": "auto"
             });
 
             //1
             $(".oneBox").css({
                 "top": "180px",
-                "right": "-10px",
+                "right": "-50px",
                 "left": "auto"
             });
 
@@ -736,43 +734,43 @@ $(document).ready(function () {
 
             //5
             $(".bottomTwoNumBox").css({
-                "top": "85px",
-                "left": "-10px",
+                "top": "82px",
+                "left": "20px",
                 "right": "auto"
             });
 
             //6
             $(".bottomOneNumBox").css({
-                "top": "0",
-                "left": "70px",
+                "top": "10px",
+                "left": "110px",
                 "right": "auto"
             });
 
             //1
             $(".oneBox").css({
                 "top": "40px",
-                "right": "-40px",
+                "right": "-50px",
                 "left": "auto"
             });
 
             //4
             $(".bottomThreeNumBox").css({
-                "top": "180px",
-                "left": "40px",
+                "top": "160px",
+                "left": "90px",
                 "right": "auto"
             });
 
             //3
             $(".topTwoNumBox").css({
                 "top": "150px",
-                "left": "100px",
+                "left": "150px",
                 "right": "auto"
             });
 
             //2
             $(".topOneNumBox").css({
                 "top": "180px",
-                "right": "-10px",
+                "right": "-50px",
                 "left": "auto"
             });
 
@@ -849,43 +847,43 @@ $(document).ready(function () {
 
             //6
             $(".bottomOneNumBox").css({
-                "top": "85px",
-                "left": "-10px",
+                "top": "82px",
+                "left": "20px",
                 "right": "auto"
             });
 
             //1
             $(".oneBox").css({
-                "top": "0",
-                "left": "70px",
+                "top": "10px",
+                "left": "110px",
                 "right": "auto"
             });
 
             //2
             $(".topOneNumBox").css({
                 "top": "40px",
-                "right": "-40px",
+                "right": "-50px",
                 "left": "auto"
             });
 
             //5
             $(".bottomTwoNumBox").css({
-                "top": "180px",
-                "left": "40px",
+                "top": "160px",
+                "left": "90px",
                 "right": "auto"
             });
 
             //4
             $(".bottomThreeNumBox").css({
                 "top": "150px",
-                "left": "100px",
+                "left": "150px",
                 "right": "auto"
             });
 
             //3
             $(".topTwoNumBox").css({
                 "top": "180px",
-                "right": "-10px",
+                "right": "-50px",
                 "left": "auto"
             });
 
