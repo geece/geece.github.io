@@ -139,6 +139,7 @@ $(document).ready(function () {
             }
         });
         $(".subButton").bind('mouseover', function () {
+            $(".subMainButton").text("服務項目 ▴");
             $(".menuBtn").css("color", "#a8a8a8");
             $(".subMainButton").css("color", "#1F1F1F");
             if (lastPathSegment === "blog01.html" || lastPathSegment === "blog02.html" || lastPathSegment === "blog03.html" || lastPathSegment === "blog04.html" || lastPathSegment === "blog05.html" || lastPathSegment === "blog06.html") {
@@ -163,6 +164,7 @@ $(document).ready(function () {
             $("#navHighLight").css('color', 'black');
         }).bind('mouseout', function () {});
         $(".subButton").mouseleave(function () {
+            $(".subMainButton").text("服務項目 ▾");
             if (lastScrollTop === 0) {
                 if (lastPathSegment === "blog01.html" || lastPathSegment === "blog02.html" || lastPathSegment === "blog03.html" || lastPathSegment === "blog04.html" || lastPathSegment === "blog05.html" || lastPathSegment === "blog06.html") {
                     // Blog Page
