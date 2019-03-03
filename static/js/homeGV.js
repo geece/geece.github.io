@@ -323,7 +323,7 @@ $(document).ready(function () {
 
             //4
             $(".bottomThreeNumBox").css({
-                "top": "160px",
+                "top": "140px",
                 "right": "-60px",
                 "left": "auto"
             });
@@ -429,7 +429,7 @@ $(document).ready(function () {
 
             //5
             $(".bottomTwoNumBox").css({
-                "top": "160px",
+                "top": "140px",
                 "right": "-60px",
                 "left": "auto"
             });
@@ -537,7 +537,7 @@ $(document).ready(function () {
 
             //6
             $(".bottomOneNumBox").css({
-                "top": "160px",
+                "top": "140px",
                 "right": "-60px",
                 "left": "auto"
             });
@@ -648,7 +648,7 @@ $(document).ready(function () {
 
             //1
             $(".oneBox").css({
-                "top": "160px",
+                "top": "140px",
                 "right": "-60px",
                 "left": "auto"
             });
@@ -759,7 +759,7 @@ $(document).ready(function () {
 
             //2
             $(".topOneNumBox").css({
-                "top": "160px",
+                "top": "140px",
                 "right": "-60px",
                 "left": "auto"
             });
@@ -872,7 +872,7 @@ $(document).ready(function () {
 
             //3
             $(".topTwoNumBox").css({
-                "top": "160px",
+                "top": "140px",
                 "right": "-60px",
                 "left": "auto"
             });
