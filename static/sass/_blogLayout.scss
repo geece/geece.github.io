@@ -1,0 +1,285 @@
+main {
+    width: 100%;
+    padding: 120px 0 0 0;
+}
+
+.blogContainer {
+    max-width: 1200px;
+    width: 100%;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    hr {
+        border: 0.5px solid white;
+    }
+}
+
+.blogTitleBox {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+
+    .titleCatgory {
+        color: $GVDarkGreen;
+        font-weight: 500;
+        font-size: 110%;
+    }
+
+    .titleDate {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 90%;
+        color: $GVDisableGrey;
+    }
+
+    h1 {
+        font-size: 300%;
+        font-weight: 200;
+        margin: 20px 0 40px 0;
+    }
+}
+
+.blogContent {
+    width: 95%;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.5em;
+    padding: 30px 0 70px 0;
+    font-weight: 300;
+    font-size: 110%;
+    letter-spacing: 0.5px;
+}
+
+.label {
+    margin: 50px 0 20px 0;
+    font-size: 120%;
+    font-weight: 500;
+    border-left: 5px solid $GVBlue;
+    padding-left: 15px;
+}
+
+.highlightLabel {
+    margin: 50px 0 20px 0;
+    font-size: 110%;
+    font-weight: 300;
+    line-height: 1.8em;
+    padding-left: 20px;
+
+    li {
+        list-style-type: disc;
+    }
+}
+
+.subContent {
+    padding-left: 20px;
+
+    a {
+        color: $GVGray55;
+        word-wrap: break-word;
+        display: block;
+        padding: 5px 0 0 0;
+        text-decoration: underline;
+        transition: 0.3s ease;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -ms-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+    }
+
+    a:hover {
+        color: $GVBlue;
+    }
+}
+
+.otherLabel {
+    max-width: 1200px;
+    width: 95%;
+    font-size: 110%;
+    color: $GVDisableGrey;
+    margin: 50px auto 30px auto;
+}
+
+.linkToOthers {
+    max-width: 1200px;
+    margin: auto;
+    width: 95%;
+    @extend %flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+}
+
+.blogCard {
+    width: calc(100% / 3);
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px 15px 40px 15px;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    a {
+        display: inline-block;
+        opacity: 1;
+        transition: 0.3s ease;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -ms-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }
+}
+
+.centerMagin {
+    margin: 10px 10px;
+}
+
+.cardCategory {
+    @extend %flex_left;
+    margin: 30px 0 15px 0;
+    font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: $GVDarkGreen;
+
+    span {
+        font-size: 13px;
+        margin-left: 10px;
+        color: $GVDisableGrey;
+    }
+}
+
+.cardTitle {
+    color: $GVDarkTextGrey;
+    font-size: 150%;
+    line-height: 1.3em;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .blogTitleBox,
+    .blogContent,
+    .otherLabel,
+    .linkToOthers {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .titleCatgory {
+        font-size: 16px;
+    }
+
+    .titleDate {
+        font-size: 15px;
+    }
+
+
+    .blogContent {
+        font-size: 16px;
+        line-height: 1.9em;
+    }
+
+    .cardCategory {
+        font-size: 16px;
+
+        span {
+            font-size: 15px;
+        }
+    }
+
+    .cardTitle {
+        font-size: 20px;
+    }
+
+    .blogTitleBox h1 {
+        font-size: 36px;
+    }
+
+    .otherLabel {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .blogTitleBox,
+    .blogContent,
+    .otherLabel,
+    .linkToOthers {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .blogContent {
+        font-size: 14px;
+        line-height: 1.5em;
+        padding: 30px 30px 50px 30px;
+    }
+
+    .label {
+        margin: 50px 0 10px 0;
+        font-size: 16px;
+    }
+
+    .blogTitleBox .titleCatgory {
+        font-size: 14px;
+    }
+
+    .titleDate {
+        font-size: 80%;
+    }
+
+    .blogTitleBox h1 {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    .highlightLabel {
+        margin: 20px 0;
+    }
+
+    .otherLabel {
+        font-size: 16px;
+    }
+
+    .linkToOthers {
+        flex-direction: column;
+    }
+
+    .blogCard {
+        width: 100%;
+    }
+
+    .cardCategory {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        span {
+            font-size: 12px;
+        }
+    }
+
+    .centerMagin {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,371 @@
+// Stop Scrolling
+body {
+    height: auto;
+}
+
+.stop-scrolling {
+    overflow: hidden;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 390px;
+    color: white;
+    background: url('../img/banner/service_mask.jpg') center center no-repeat;
+    background-size: cover;
+    ;
+    @extend %flex_center;
+
+    h1 {
+        font-size: 400%;
+        font-weight: 200;
+        letter-spacing: 4px;
+    }
+}
+
+main {
+    width: 100%;
+    padding: 50px 0 100px 0;
+}
+
+.serviceContainer {
+    max-width: 1200px;
+
+    hr {
+        border-width: 1px;
+        border-color: $GVGray40;
+    }
+}
+
+.tabButtonBox {
+    padding: 40px 0;
+    @extend %flex_between;
+
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 20px;
+            border-left: 2px $GVDisableGrey solid;
+
+            a {
+                color: $GVDisableGrey;
+                transition: 0.3s ease;
+                -webkit-transition: 0.3s ease;
+                -moz-transition: 0.3s ease;
+                -ms-transition: 0.3s ease;
+                -o-transition: 0.3s ease;
+            }
+
+            a:hover {
+                color: $GVGray55;
+            }
+        }
+    }
+}
+
+.tabButtonBox_mobile {
+    display: none;
+    width: 80%;
+    margin: auto;
+    color: $GVGray55;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 20px 15px;
+    text-align: left;
+    border: 1px solid $GVBlue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    img {
+        width: 30px;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+    }
+
+    .mobileSlideBtnIconRotate {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+
+.sliderMenu {
+    width: 100%;
+    background-color: $GVBlue;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+    position: relative;
+    z-index: 21;
+
+    ul {
+        li {
+            width: 100%;
+            text-align: center;
+            margin: 15px 0;
+
+            a {
+                display: inline-block;
+                padding: 10px 0;
+                transition: 0.3s ease;
+                -webkit-transition: 0.3s ease;
+                -moz-transition: 0.3s ease;
+                -ms-transition: 0.3s ease;
+                -o-transition: 0.3s ease;
+                color: white;
+                font-size: 110%;
+                letter-spacing: 1px;
+            }
+
+            a:active {
+                border-bottom: 2px solid $GVDarkGreen;
+            }
+
+            a:focus {
+                border-bottom: 2px solid $GVDarkGreen;
+            }
+
+            .mobileBorder {
+                border-bottom: 2px solid $GVDarkGreen;
+            }
+        }
+    }
+}
+
+.buttonTitle {
+    font-size: 250%;
+    color: $GVGray55;
+    font-weight: 300;
+}
+
+.descriptionBox {
+    padding: 40px 0;
+
+    p {
+        font-size: 110%;
+        color: $GVDarkTextGrey;
+        letter-spacing: 1px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+
+    .chartImg {
+        width: 70%;
+        margin: auto;
+    }
+
+    img {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.deskChart {
+    padding: 10px 50px;
+}
+
+.mobileChart,
+.mobileSubOverLay {
+    display: none;
+}
+
+.label {
+    margin: 50px 0 20px 0;
+    font-size: 120%;
+    font-weight: 500;
+    border-left: 5px solid $GVBlue;
+    padding-left: 15px;
+}
+
+/* PhotoBox */
+
+.photoBox {
+    width: 100%;
+    @extend %flex_center;
+    flex-direction: column;
+}
+
+.photoRow {
+    width: 100%;
+    @extend %flex_between;
+    flex-direction: row;
+}
+
+.photoImg {
+    width: 50%;
+    margin: 10px;
+    opacity: 1;
+    background-color: #e1e1e1;
+
+    a {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        cursor: default;
+
+        img {
+            width: 100%;
+            background-color: #e1e1e1;
+            transition: opacity .2s ease-in .25s;
+            -webkit-transition: opacity .2s ease-in .25s;
+            -moz-transition: opacity .2s ease-in .25s;
+            -ms-transition: opacity .2s ease-in .25s;
+            -o-transition: opacity .2s ease-in .25s;
+        }
+
+        .overLayer {
+            opacity: 0;
+            transition: opacity .2s ease-in .25s;
+            @extend %flex_center;
+            width: 100%;
+            height: 100%;
+            background-blend-mode: multiply;
+            background-image: linear-gradient(to bottom, rgba(55, 160, 255, 0.6), rgba(55, 160, 255, 0.6));
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            font-size: 150%;
+            font-weight: 500;
+            transition: 0.3s ease;
+            -webkit-transition: 0.3s ease;
+            -moz-transition: 0.3s ease;
+            -ms-transition: 0.3s ease;
+            -o-transition: 0.3s ease;
+        }
+    }
+}
+
+// Mobile 
+@media only screen and (max-width: 900px) {
+
+    .serviceContainer {
+        width: 100%;
+    }
+
+    header {
+        h1 {
+            font-size: 300%;
+        }
+    }
+
+    .tabButtonBox,
+    hr {
+        display: none;
+    }
+
+    .tabButtonBox_mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .descriptionBox p {
+        padding: 0 50px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .label {
+        margin: 50px 50px 20px 50px;
+    }
+
+    .photoBox {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+        height: 270px;
+
+        h1 {
+            font-size: 200%;
+        }
+    }
+
+    .serviceContainer {
+        width: 100%;
+    }
+
+    .descriptionBox {
+        padding: 20px 0 40px 0;
+
+        p {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            padding: 0 20px;
+            font-size: 14px;
+            line-height: 1.6em;
+
+        }
+    }
+
+    .label {
+        margin: 50px 25px 20px 25px;
+    }
+
+    .deskChart {
+        display: none;
+    }
+
+    .mobileChart {
+        display: block;
+        padding: 10px 25px;
+    }
+
+    .mobileSubOverLay {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 20;
+        height: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .photoBox {
+        padding: 0;
+    }
+
+    .photoRow {
+        flex-direction: column;
+    }
+
+    .photoImg {
+        width: 100vw;
+        height: 100vw;
+
+        a {
+            width: 100vw;
+            height: 100vw;
+        }
+
+        img {
+            width: 100vw;
+            height: 100vw;
+            object-fit: cover;
+        }
+    }
+
+    .tabButtonBox_mobile {
+        padding: 10px 15px;
+    }
+}
