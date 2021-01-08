@@ -763,6 +763,16 @@ main {
     width: 100%;
     margin: auto; }
 
+.descriptionLink {
+  color: #37A0FF;
+  text-decoration: underline; }
+  .descriptionLink:hover {
+    color: #37A0FF; }
+  .descriptionLink:visited {
+    color: #37A0FF; }
+  .descriptionLink:active {
+    color: #37A0FF; }
+
 .deskChart {
   padding: 10px 50px; }
 
